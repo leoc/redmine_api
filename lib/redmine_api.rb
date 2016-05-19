@@ -7,6 +7,7 @@ require 'redmine_api/project'
 require 'redmine_api/relation'
 require 'redmine_api/membership'
 require 'redmine_api/time_entry'
+require 'redmine_api/tracker'
 
 module RedmineApi
 end
