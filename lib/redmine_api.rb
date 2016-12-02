@@ -9,6 +9,7 @@ require 'redmine_api/membership'
 require 'redmine_api/time_entry'
 require 'redmine_api/time_entry_activity'
 require 'redmine_api/tracker'
+require 'redmine_api/custom_field'
 
 module RedmineApi
 end
