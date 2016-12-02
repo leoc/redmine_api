@@ -1,4 +1,4 @@
 module RedmineApi
-    class TimeEntry < RedmineApi::Base
-    end
+  class TimeEntry < RedmineApi::Base
+  end
 end

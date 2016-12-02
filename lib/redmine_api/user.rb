@@ -1,4 +1,4 @@
 module RedmineApi
-    class User < RedmineApi::Base
-    end
+  class User < RedmineApi::Base
+  end
 end

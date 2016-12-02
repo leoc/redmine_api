@@ -1,4 +1,5 @@
 module RedmineApi
-    class Issue < RedmineApi::Base
-    end
+  class Issue < RedmineApi::Base
+
+  end
 end

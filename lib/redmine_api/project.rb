@@ -1,4 +1,4 @@
 module RedmineApi
-    class Project < RedmineApi::Base
-    end
+  class Project < RedmineApi::Base
+  end
 end
