@@ -1,6 +1,9 @@
 module RedmineApi
   class Base < ActiveResource::Base
-    self.format = :xml
+    self.format = :json
+    self.include_root_in_json = true
+    self.collection_parser = RedmineApi::Collection
+
     def self.configure
       yield self
     end

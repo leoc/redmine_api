@@ -1,5 +1,6 @@
 require "redmine_api/version"
 require 'active_resource'
+require 'redmine_api/collection'
 require 'redmine_api/base'
 require 'redmine_api/issue'
 require 'redmine_api/user'
