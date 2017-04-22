@@ -14,8 +14,8 @@ module RedmineApi
       elements_key = (parsed.keys - %w(total_count offset limit)).first
       @elements = parsed[elements_key]
       @total_count = parsed['total_count']
-      @offset = parsed['offset']
-      @limit = parsed['limit']
+      @offset = parsed['offset'] || 0
+      @limit = parsed['limit'] || 100
     end
 
     def next_page?
