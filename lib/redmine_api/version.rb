@@ -1,6 +1,6 @@
 module RedmineApi
   class Version < RedmineApi::Base
-    self.prefix = '/projects/'
+    self.prefix = "/"
 
     def self.project_id(project_id)
       self.prefix = "/projects/#{project_id}/"
@@ -20,6 +20,13 @@ module RedmineApi
         results.push(*results_query)
       end
       results
+    end
+
+    class << self
+      def element_path(id, prefix_options = {}, query_options = nil)
+        prefix_options, query_options = split_options(prefix_options) if query_options.nil?
+        "/#{collection_name}/#{URI.parser.escape id.to_s}#{format_extension}#{query_string(query_options)}"
+      end
     end
   end
 end
